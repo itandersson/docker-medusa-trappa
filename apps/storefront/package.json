@@ -15,10 +15,8 @@
     "analyze": "ANALYZE=true next build"
   },
   "dependencies": {
-    "@headlessui/react": "^2.2.0",
     "@medusajs/icons": "2.18.0",
     "@medusajs/js-sdk": "2.18.0",
-    "@medusajs/ui": "4.2.0",
     "@radix-ui/react-accordion": "^1.2.3",
     "@stripe/react-stripe-js": "^5.3.0",
     "@stripe/stripe-js": "^8.2.0",
