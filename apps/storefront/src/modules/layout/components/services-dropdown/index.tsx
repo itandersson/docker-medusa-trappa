@@ -58,7 +58,7 @@ export default function ServicesDropdown() {
         <div className="my-2 h-px bg-ui-border-base" />
 
         <LocalizedClientLink
-          href="/tjanster"
+          href="/stadhjalp"
           onClick={() => setOpen(false)}
           className="flex items-center gap-3 px-2 py-2 rounded-md hover:bg-ui-bg-subtle"
         >
@@ -70,7 +70,7 @@ export default function ServicesDropdown() {
         </LocalizedClientLink>
 
         <LocalizedClientLink
-          href="/tjanster/trappstadning"
+          href="/trappstadning"
           onClick={() => setOpen(false)}
           className="flex items-center gap-3 px-2 py-2 rounded-md hover:bg-ui-bg-subtle"
         >

@@ -94,7 +94,7 @@ export const metadata: Metadata = {
   description: "Våra tjänster inom trappstädning",
 }
 
-export default function TjansterPage() {
+export default function TrappstadningPage() {
   return (
     <div className="content-container py-12">
       <h1 className="text-3xl font-semibold mb-6">Tjänster</h1>
