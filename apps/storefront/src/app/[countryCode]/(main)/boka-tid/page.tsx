@@ -1,5 +1,6 @@
 import { Metadata } from "next"
 import { BookingCalendar } from "@modules/booking/components/booking-calendar"
+import { Main } from "@modules/layout/components/main"
 
 export const metadata: Metadata = {
   title: "Tjänster | Ert Företagsnamn",
@@ -8,9 +9,11 @@ export const metadata: Metadata = {
 
 export default function BokatidPage() {
   return (
-    <div className="content-container py-12">
-      <h1 className="text-3xl font-semibold mb-6">Boka en tid</h1>
-      <BookingCalendar />
-    </div>
+    <Main>
+      <div className="content-container py-12">
+        <h1 className="text-3xl font-semibold mb-6">Boka en tid</h1>
+        <BookingCalendar />
+      </div>
+    </Main>
   )
 }
