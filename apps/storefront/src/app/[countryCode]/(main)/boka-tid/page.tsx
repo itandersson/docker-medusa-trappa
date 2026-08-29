@@ -11,7 +11,6 @@ export default function BokatidPage() {
   return (
     <Main>
       <div className="content-container py-12">
-        <h1 className="text-3xl font-semibold mb-6">Boka en tid</h1>
         <BookingCalendar />
       </div>
     </Main>
