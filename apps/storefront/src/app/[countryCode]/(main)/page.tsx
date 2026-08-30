@@ -1,5 +1,5 @@
 import { Metadata } from "next"
-
+import { Button } from "@medusajs/ui"
 import FeaturedProducts from "@modules/home/components/featured-products"
 import { listCollections } from "@lib/data/collections"
 import { getRegion } from "@lib/data/regions"
@@ -89,6 +89,29 @@ export default async function Home(props: {
               </li>
             ))}
           </ul>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="mx-auto max-w-6xl px-6 py-20">
+        <div className="rounded-2xl bg-[#1C2B33] text-white px-8 py-14 md:px-14 flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+          <div>
+            <h2 className="font-[family-name:var(--font-display)] text-3xl font-medium">
+              Vill ni slippa klagomål om smutsiga trapphus?
+            </h2>
+            <p className="mt-2 text-white/60 max-w-md">
+              Boka och betala direkt via vår digitala plattform. Schemat direkt
+              synligt här på vår webbsida. Så enkelt är det att få rena trapphus
+              varje vecka.
+            </p>
+          </div>
+
+          <Button
+            size="large"
+            className="bg-[#B08D57] hover:bg-[#B08D57]/90 text-white shrink-0"
+          >
+            Boka direkt
+          </Button>
         </div>
       </section>
 

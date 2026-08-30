@@ -1,5 +1,5 @@
 import { Metadata } from "next"
-import { Badge, Button } from "@medusajs/ui"
+import { Button } from "@medusajs/ui"
 import { IBM_Plex_Mono, IBM_Plex_Sans, Space_Grotesk } from "next/font/google"
 import Link from "next/link"
 import { Main } from "@modules/layout/components/main"
@@ -26,7 +26,7 @@ const tjanster = [
   },
   {
     titel: "Hissrengöring",
-    beskrivning: "Golv, paneler och speglar – dagligen eller enligt schema.",
+    beskrivning: "Golv, paneler och speglar - dagligen eller enligt schema.",
   },
   {
     titel: "Källare & tvättstuga",
@@ -60,7 +60,7 @@ const process = [
   {
     steg: "03",
     titel: "Löpande städning",
-    text: "Städning enligt avtalad frekvens – 1 till 5 gånger per vecka.",
+    text: "Städning enligt avtalad frekvens - 1 till 5 gånger per vecka.",
   },
   {
     steg: "04",
@@ -78,26 +78,16 @@ export default function TrappstadningPage() {
   return (
     <Main>
       <div className="content-container py-12">
-        <h1 className="text-3xl font-semibold mb-6">Tjänster</h1>
-
         {/* Hero */}
         <section className="mx-auto max-w-6xl px-6 pt-20 pb-16 md:pt-28">
-          <Badge
-            color="orange"
-            size="small"
-            className="bg-[#B08D57]/10 text-[#B08D57] font-[family-name:var(--font-mono)] tracking-wide"
-          >
-            Trappstädning för fastighetsbolag
-          </Badge>
-
           <h1 className="mt-6 max-w-3xl font-[family-name:var(--font-display)] text-4xl md:text-6xl font-medium leading-[1.05]">
-            Rena trapphus varje vecka — utan att ni behöver ringa och påminna.
+            Rena trapphus varje vecka
           </h1>
 
           <p className="mt-6 max-w-xl text-lg text-[#1C2B33]/70">
-            Vi sköter den löpande trappstädningen åt fastighetsbolag i
-            Stockholmsområdet: fasta scheman, digital avstämning efter varje
-            besök och en kontaktperson som svarar samma dag.
+            Vi sköter den löpande trappstädningen åt fastighetsbolag i Skåne:
+            fasta scheman, digital avstämning efter varje besök och en
+            kontaktperson som svarar samma dag.
           </p>
 
           <div className="mt-8 flex flex-wrap gap-4">
@@ -105,7 +95,7 @@ export default function TrappstadningPage() {
               size="large"
               className="bg-[#1C2B33] hover:bg-[#1C2B33]/90 text-white"
             >
-              Boka kostnadsfri genomgång
+              Boka direkt
             </Button>
 
             <Button
@@ -129,7 +119,7 @@ export default function TrappstadningPage() {
         {/* Tjänster */}
         <section className="mx-auto max-w-6xl px-6 py-16">
           <h2 className="font-[family-name:var(--font-display)] text-3xl md:text-4xl font-medium max-w-lg">
-            Allt som hör till trapphuset — inte bara golvet.
+            Allt som hör till trapphuset
           </h2>
 
           <div className="mt-10 grid gap-px bg-[#1C2B33]/10 sm:grid-cols-2 lg:grid-cols-3 rounded-xl overflow-hidden">
@@ -169,41 +159,6 @@ export default function TrappstadningPage() {
 
         {/* Separator */}
         <div className="my-4 h-px w-full bg-ui-border-base" />
-
-        {/* Referens */}
-        <section className="mx-auto max-w-6xl px-6 py-16">
-          <blockquote className="max-w-2xl">
-            <p className="font-[family-name:var(--font-display)] text-2xl leading-snug">
-              "Vi slapp helt klagomål om smutsiga trapphus efter att vi bytte
-              till ett fast schema med rapportering."
-            </p>
-            <footer className="mt-4 text-sm text-[#1C2B33]/60 font-[family-name:var(--font-mono)]">
-              — Fastighetsförvaltare, Brf i Sundbyberg
-            </footer>
-          </blockquote>
-        </section>
-
-        {/* CTA */}
-        <section className="mx-auto max-w-6xl px-6 py-20">
-          <div className="rounded-2xl bg-[#1C2B33] text-white px-8 py-14 md:px-14 flex flex-col md:flex-row md:items-center md:justify-between gap-6">
-            <div>
-              <h2 className="font-[family-name:var(--font-display)] text-3xl font-medium">
-                Vill ni slippa klagomål om smutsiga trapphus?
-              </h2>
-              <p className="mt-2 text-white/60 max-w-md">
-                Skicka in er fastighetsportfölj så återkommer vi med ett schema
-                och pris inom 24 timmar.
-              </p>
-            </div>
-
-            <Button
-              size="large"
-              className="bg-[#B08D57] hover:bg-[#B08D57]/90 text-white shrink-0"
-            >
-              Boka kostnadsfri genomgång
-            </Button>
-          </div>
-        </section>
       </div>
     </Main>
   )
