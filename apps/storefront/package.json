@@ -15,6 +15,7 @@
     "analyze": "ANALYZE=true next build"
   },
   "dependencies": {
+    "@headlessui/react": "^2.2.10",
     "@medusajs/icons": "2.19.0",
     "@medusajs/js-sdk": "2.19.0",
     "@medusajs/ui": "4.2.1",
