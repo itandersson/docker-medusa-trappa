@@ -1,7 +1,4 @@
 {
-  "HomePage": {
-    "title": "Trappstädning för fastighetsbolag"
-  },
   "Login": {
     "title": "Välkommen tillbaka",
     "description": "Logga in för att få en förbättrad shoppingupplevelse.",
@@ -12,5 +9,19 @@
     "signIn": "Logga in",
     "notAMember": "Inte medlem än?",
     "joinUs": "Bli medlem"
+  },
+  "Register": {
+    "title": "Bli medlem hos Medusa Store",
+    "description": "Skapa din Medusa Store-medlemsprofil och få tillgång till en förbättrad shoppingupplevelse.",
+    "verificationMessage": "Vi har skickat en verifieringslänk till <strong>{email}</strong>. Kontrollera din inkorg för att verifiera din e-post och logga sedan in.",
+    "firstNameLabel": "Förnamn",
+    "lastNameLabel": "Efternamn",
+    "emailLabel": "E-post",
+    "phoneLabel": "Telefon",
+    "passwordLabel": "Lösenord",
+    "termsText": "Genom att skapa ett konto godkänner du Medusa Stores <privacyLink>integritetspolicy</privacyLink> och <termsLink>användarvillkor</termsLink>.",
+    "joinButton": "Gå med",
+    "alreadyMember": "Redan medlem?",
+    "signIn": "Logga in"
   }
 }

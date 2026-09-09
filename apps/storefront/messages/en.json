@@ -1,7 +1,4 @@
 {
-  "HomePage": {
-    "title": "Hello world!"
-  },
   "Login": {
     "title": "Welcome back",
     "description": "Sign in to access an enhanced shopping experience.",
@@ -12,5 +9,19 @@
     "signIn": "Sign in",
     "notAMember": "Not a member?",
     "joinUs": "Join us"
+  },
+  "Register": {
+    "title": "Become a Medusa Store Member",
+    "description": "Create your Medusa Store Member profile, and get access to an enhanced shopping experience.",
+    "verificationMessage": "We sent a verification link to <strong>{email}</strong>. Please check your inbox to verify your email, then sign in.",
+    "firstNameLabel": "First name",
+    "lastNameLabel": "Last name",
+    "emailLabel": "Email",
+    "phoneLabel": "Phone",
+    "passwordLabel": "Password",
+    "termsText": "By creating an account, you agree to Medusa Store's <privacyLink>Privacy Policy</privacyLink> and <termsLink>Terms of Use</termsLink>.",
+    "joinButton": "Join",
+    "alreadyMember": "Already a member?",
+    "signIn": "Sign in"
   }
 }
