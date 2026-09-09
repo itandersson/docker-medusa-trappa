@@ -1,5 +1,16 @@
 {
   "HomePage": {
     "title": "Hello world!"
+  },
+  "Login": {
+    "title": "Welcome back",
+    "description": "Sign in to access an enhanced shopping experience.",
+    "verificationRequired": "We sent a verification link to <strong>{email}</strong>. Please verify your email, then sign in.",
+    "emailLabel": "Email",
+    "emailValidationMessage": "Enter a valid email address.",
+    "passwordLabel": "Password",
+    "signIn": "Sign in",
+    "notAMember": "Not a member?",
+    "joinUs": "Join us"
   }
 }

@@ -1,5 +1,16 @@
 {
   "HomePage": {
     "title": "Trappstädning för fastighetsbolag"
+  },
+  "Login": {
+    "title": "Välkommen tillbaka",
+    "description": "Logga in för att få en förbättrad shoppingupplevelse.",
+    "verificationRequired": "Vi har skickat en verifieringslänk till <strong>{email}</strong>. Verifiera din e-postadress och logga sedan in.",
+    "emailLabel": "E-post",
+    "emailValidationMessage": "Ange en giltig e-postadress.",
+    "passwordLabel": "Lösenord",
+    "signIn": "Logga in",
+    "notAMember": "Inte medlem än?",
+    "joinUs": "Bli medlem"
   }
 }
