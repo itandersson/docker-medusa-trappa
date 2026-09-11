@@ -1,4 +1,5 @@
 import { Suspense } from "react"
+import { getTranslations } from "next-intl/server"
 
 import { listLocales } from "@lib/data/locales"
 import { getLocale } from "@lib/data/locale-actions"
@@ -10,6 +11,8 @@ import SideMenu from "@modules/layout/components/side-menu"
 import MenuNav from "@modules/layout/components/menu-nav"
 
 export default async function Nav() {
+  const t = await getTranslations("Nav")
+
   const [regions, locales, currentLocale] = await Promise.all([
     listRegions().then((regions: StoreRegion[]) => regions),
     listLocales(),
@@ -44,7 +47,7 @@ export default async function Nav() {
                 href="/account"
                 data-testid="nav-account-link"
               >
-                Account
+                {t("account")}
               </LocalizedClientLink>
             </div>
             <Suspense
@@ -54,7 +57,7 @@ export default async function Nav() {
                   href="/cart"
                   data-testid="nav-cart-link"
                 >
-                  Cart (0)
+                  {t("cart")} (0)
                 </LocalizedClientLink>
               }
             >

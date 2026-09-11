@@ -1,4 +1,18 @@
 {
+  "Nav": {
+    "account": "Mitt konto",
+    "cart": "Mina avtal"
+  },
+  "Cart": {
+    "quantity": "Antal: {count}",
+    "remove": "Ta bort",
+    "subtotal": "Delsumma",
+    "subtotalNote": "(exkl. moms)",
+    "goToCart": "Gå till kundvagn",
+    "emptyBag": "Din varukorg är tom.",
+    "goToAllProducts": "Gå till alla produkter",
+    "exploreProducts": "Utforska produkter"
+  },
   "Login": {
     "title": "Välkommen tillbaka",
     "description": "Logga in för att få en förbättrad shoppingupplevelse.",

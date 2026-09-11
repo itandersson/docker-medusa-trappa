@@ -1,4 +1,18 @@
 {
+  "Nav": {
+    "account": "Account",
+    "cart": "Cart"
+  },
+  "Cart": {
+    "quantity": "Quantity: {count}",
+    "remove": "Remove",
+    "subtotal": "Subtotal",
+    "subtotalNote": "(excl. taxes)",
+    "goToCart": "Go to cart",
+    "emptyBag": "Your shopping bag is empty.",
+    "goToAllProducts": "Go to all products page",
+    "exploreProducts": "Explore products"
+  },
   "Login": {
     "title": "Welcome back",
     "description": "Sign in to access an enhanced shopping experience.",
