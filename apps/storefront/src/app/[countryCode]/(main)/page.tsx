@@ -51,6 +51,16 @@ export default async function Home(props: {
 
   return (
     <Main>
+      <div className="text-center">
+        <p>
+          Vi är ett nystartat, lokalt enmansföretag som erbjuder tjänster.
+          <br />
+          Beställ din tjänst här så ses vi på utsatt tid.
+          <br />
+          Svårare än så behöver det inte vara...
+        </p>
+      </div>
+
       {/* Schema-widget */}
       <section id="schema" className="mx-auto max-w-6xl px-6 py-16">
         <div className="rounded-2xl border border-[#1C2B33]/10 bg-white overflow-hidden">
