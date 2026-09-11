@@ -4,7 +4,6 @@ import FeaturedProducts from "@modules/home/components/featured-products"
 import { listCollections } from "@lib/data/collections"
 import { getRegion } from "@lib/data/regions"
 import { Main } from "@modules/layout/components/main"
-import { getTranslations } from "next-intl/server"
 
 const schema = [
   {
@@ -50,11 +49,8 @@ export default async function Home(props: {
     return null
   }
 
-  const t = await getTranslations("HomePage")
-
   return (
     <Main>
-      <h1>{t("title")}</h1>
       {/* Schema-widget */}
       <section id="schema" className="mx-auto max-w-6xl px-6 py-16">
         <div className="rounded-2xl border border-[#1C2B33]/10 bg-white overflow-hidden">
