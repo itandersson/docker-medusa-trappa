@@ -37,7 +37,7 @@ export default function ServicesDropdown() {
         aria-haspopup="true"
         className="hover:text-ui-fg-base flex items-center gap-1"
       >
-        Tjänster
+        Beställ tjänst
         <span
           className={`transition-transform duration-150 ${
             open ? "rotate-180" : ""
@@ -64,7 +64,7 @@ export default function ServicesDropdown() {
         >
           <Layers3 className="text-ui-fg-subtle" />
           <div>
-            <p className="font-medium">Beställ städhjälp</p>
+            <p className="font-medium">Städhjälp</p>
             <p className="text-ui-fg-subtle text-xs">300 kr/h</p>
           </div>
         </LocalizedClientLink>

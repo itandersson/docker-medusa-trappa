@@ -1,7 +1,7 @@
 {
   "Nav": {
     "account": "Mitt konto",
-    "cart": "Mina avtal"
+    "cart": "Betala tjänst"
   },
   "Cart": {
     "quantity": "Antal: {count}",
