@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 import { Calendar } from "@medusajs/ui"
+import { CleaningFrequencyRadio } from "@modules/services/components/check-range"
 
 export function TrappstadningBooking() {
   const [date, setDate] = useState<Date | null>(null)
@@ -21,6 +22,7 @@ export function TrappstadningBooking() {
 
   return (
     <div className="flex flex-col gap-4 w-full max-w-md mx-auto">
+      <CleaningFrequencyRadio />
       <div className="rounded-md border p-4 shadow-sm">
         <div
           className="
