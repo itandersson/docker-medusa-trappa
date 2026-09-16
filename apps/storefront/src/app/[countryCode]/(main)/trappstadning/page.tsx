@@ -19,7 +19,7 @@ export default function TrappstadningOchBokningPage() {
 
         {/* Höger: bokning, egen scroll */}
         <div className="w-1/2 h-full overflow-y-auto">
-          <div className="content-container py-12">
+          <div className="content-container pt-12 pb-12">
             <TrappstadningBooking />
           </div>
         </div>

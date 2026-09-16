@@ -53,7 +53,7 @@ const process = [
 
 export function TrappstadningContent() {
   return (
-    <div className="py-12">
+    <div>
       {/* Hero */}
       <section className="mx-auto max-w-3xl px-6 pt-12 pb-16">
         <h1 className="mt-6 font-[family-name:var(--font-display)] text-3xl md:text-5xl font-medium leading-[1.05]">
