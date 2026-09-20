@@ -6,10 +6,6 @@ export function CleaningFrequencyRadio() {
 
   return (
     <div className="flex flex-col gap-6">
-      <Label className="text-lg font-medium">
-        Ska vi städa en gång eller löpande varje vecka?
-      </Label>
-
       <RadioGroup
         value={value}
         onValueChange={setValue}
