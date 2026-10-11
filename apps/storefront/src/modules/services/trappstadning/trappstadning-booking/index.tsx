@@ -1,14 +1,22 @@
+// index.tsx
 "use client"
 
 import { ProgressTabs, Text, Button } from "@medusajs/ui"
 import * as React from "react"
 import { BookingCalendar } from "./booking-calendar"
 import { BookingForm } from "./booking-form"
-import LoginTemplate from "@modules/account/templates/login-template"
+import { BookingLogin } from "./booking-login"
 
+/**
+ * Bokningsflöde för trappstädning med tre steg: boka, uppgifter, logga in.
+ * Meddelandet i inloggningssteget bestäms av `BookingLogin`.
+ *
+ * @returns Bokningsflödets JSX.
+ */
 export function TrappstadningBooking() {
   const steps = ["general", "shipping", "payment"]
   const [active, setActive] = React.useState("general")
+  const [loginMessage, setLoginMessage] = React.useState("")
   const currentIndex = steps.indexOf(active)
 
   const handleNext = () => {
@@ -51,8 +59,8 @@ export function TrappstadningBooking() {
             <BookingForm />
           </ProgressTabs.Content>
           <ProgressTabs.Content value="payment">
-            <Text size="small">Logga in för att slutföra bokningen.</Text>
-            <LoginTemplate />
+            <Text size="small">{loginMessage}</Text>
+            <BookingLogin onMessageChange={setLoginMessage} />
           </ProgressTabs.Content>
         </div>
       </ProgressTabs>
