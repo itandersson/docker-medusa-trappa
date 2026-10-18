@@ -16,7 +16,7 @@ import { BookingLogin } from "./booking-login"
 export function TrappstadningBooking() {
   const steps = ["bokaTid", "uppgifter", "loggaIN"]
   const [active, setActive] = React.useState("bokaTid")
-  const [loginMessage, setLoginMessage] = React.useState("")
+  const [loginMessage, setLoginMessage] = React.useState<React.ReactNode>(null)
   const currentIndex = steps.indexOf(active)
 
   const handleNext = () => {
