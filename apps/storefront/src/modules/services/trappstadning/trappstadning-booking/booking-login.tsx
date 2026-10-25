@@ -1,6 +1,7 @@
 // booking-login.tsx
 import * as React from "react"
-import LoginTemplate from "@modules/account/templates/login-template"
+//import LoginTemplate from "@modules/account/templates/login-template"
+import BookingLoginTemplate from "./booking-login-template"
 import { retrieveCustomer } from "@lib/data/customer"
 
 export const MESSAGE_LOGGED_OUT = "Logga in för att slutföra bokningen."
@@ -42,6 +43,7 @@ type BookingLoginProps = {
 
 export function BookingLogin({ onMessageChange }: BookingLoginProps) {
   const [isLoggedIn, setIsLoggedIn] = React.useState<boolean | null>(null)
+  const [refreshKey, setRefreshKey] = React.useState(0)
 
   React.useEffect(() => {
     let cancelled = false
@@ -55,13 +57,17 @@ export function BookingLogin({ onMessageChange }: BookingLoginProps) {
     return () => {
       cancelled = true
     }
-  }, [onMessageChange])
+  }, [onMessageChange, refreshKey])
+
+  const handleLoggedIn = React.useCallback(() => {
+    setRefreshKey((k) => k + 1)
+  }, [])
 
   if (isLoggedIn === null || isLoggedIn) return null
 
   return (
     <div>
-      <LoginTemplate />
+      <BookingLoginTemplate onLoggedIn={handleLoggedIn} />
     </div>
   )
 }
