@@ -1,7 +1,7 @@
 services:
   # PostgreSQL Database
   postgres:
-    image: postgres:15-alpine
+    image: postgres:18-alpine
     container_name: medusa_postgres
     restart: unless-stopped
     environment:
@@ -11,7 +11,7 @@ services:
     ports:
       - "5432:5432"
     volumes:
-      - postgres_data:/var/lib/postgresql/data
+      - postgres_data:/var/lib/postgresql
     networks:
       - medusa_network
 
@@ -27,7 +27,7 @@ services:
 
   # pgAdmin 4
   pgadmin:
-    image: dpage/pgadmin4:latest
+    image: dpage/pgadmin4:9.19.0
     container_name: medusa_pgadmin
     restart: unless-stopped
     environment:
@@ -89,6 +89,23 @@ services:
     networks:
       - medusa_network
 
+  odoo:
+    image: odoo:20
+    container_name: odoo
+    restart: unless-stopped
+    depends_on:
+      - postgres
+    ports:
+      - "8069:8069"
+    environment:
+      - HOST=postgres
+      - USER=postgres
+      - PASSWORD=postgres
+    volumes:
+      - ./odoo/addons:/mnt/extra-addons
+    networks:
+      - medusa_network
+      
 volumes:
   postgres_data:
   pgadmin_data:
