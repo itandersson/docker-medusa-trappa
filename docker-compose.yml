@@ -89,19 +89,33 @@ services:
     networks:
       - medusa_network
 
+  odoo-db:
+    image: postgres:16-alpine
+    container_name: odoo_db
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: postgres
+      POSTGRES_USER: odoo
+      POSTGRES_PASSWORD: odoo
+    volumes:
+      - odoo_db_data:/var/lib/postgresql/data
+    networks:
+      - medusa_network
+
   odoo:
     image: odoo:20
     container_name: odoo
     restart: unless-stopped
     depends_on:
-      - postgres
+      - odoo-db
     ports:
       - "8069:8069"
     environment:
-      - HOST=postgres
-      - USER=postgres
-      - PASSWORD=postgres
+      - HOST=odoo-db
+      - USER=odoo
+      - PASSWORD=odoo
     volumes:
+      - odoo_web_data:/var/lib/odoo
       - ./odoo/addons:/mnt/extra-addons
     networks:
       - medusa_network
@@ -109,6 +123,8 @@ services:
 volumes:
   postgres_data:
   pgadmin_data:
+  odoo_db_data:
+  odoo_web_data:
 
 networks:
   medusa_network:
