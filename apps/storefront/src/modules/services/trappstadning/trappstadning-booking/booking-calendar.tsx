@@ -35,6 +35,9 @@ export function BookingCalendar() {
           <Table.Row>
             <Table.Cell>15:00</Table.Cell>
           </Table.Row>
+          <Table.Row>
+            <Table.Cell>17:00</Table.Cell>
+          </Table.Row>
         </Table.Body>
       </Table>
     </div>
