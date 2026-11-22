@@ -24,7 +24,14 @@ export default defineConfig({
     },
   },
 
-  // Punkt 7: Vite‑konfiguration för Admin Dashboard i Docker
+  // Vår bokningsmodul
+  modules: [
+    {
+      resolve: "./src/modules/booking",
+    },
+  ],
+
+  // Punkt 7: Vite-konfiguration för Admin Dashboard i Docker
   admin: {
     vite: (config) => {
       return {
